@@ -28,6 +28,26 @@ public class XPath {
         //boolean test =  driver.findElement(By.xpath("//h2[text()='Welcome to our store']")).isDisplayed();
         //System.out.println(test);
 
+        //XPath with contains()
+        //driver.findElement(By.xpath("//input[contains(@placeholder, 'Sea')]")).sendKeys("apple");
+
+        //XPath with starts-with()
+        driver.findElement(By.xpath("//input[starts-with(@placeholder, 'Sea')]")).sendKeys("apple");
+
+        //---------------------------------------------------------------------------------------------------
+
+        //Handling Dynamic Attributes---------------------------------
+        //Example of Start-Stop condition of StopWatch----------------
+
+        //Approach 1 - By using 'OR' operator
+        //---->    //*[@id='start' or @id='stop']
+
+        //Approach 2 - By using contains()
+        //---->   //*[contains(@id='st')]
+
+        //Approach 3 - By using starts-with()
+        //---->  //*[starts-with(@id='st')]
+
 
     }
 }
