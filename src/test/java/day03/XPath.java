@@ -16,7 +16,9 @@ public class XPath {
         //driver.findElement(By.xpath("//input[@id='small-searchterms'][@placeholder='Search store']")).sendKeys("Laptop");
 
         //XPath with 'and' 'or' operators
-        driver.findElement(By.xpath("//input[@id='small-searchterms' and @placeholder='Search store']")).sendKeys("Tablet");
+        //driver.findElement(By.xpath("//input[@id='small-searchterms' and @placeholder='Search store']")).sendKeys("Tablet");
+
+        driver.findElement(By.xpath("//input[@id='small-searchterms' or @placeholder='Search store']")).sendKeys("Tablet");
 
 
     }
